@@ -1,1 +1,13 @@
-GET http://localhost:3000/api/hello?videoId=UJeSWbR6W04
+POST http://localhost:3000/api/video
+Content-Type: application/json
+
+{
+  "videoId": "UJeSWbR6W04",
+  "chunks": [{
+    "start": 10,
+    "duration": 5
+  }, {
+    "start": 20,
+    "duration": 6
+  }]
+}
